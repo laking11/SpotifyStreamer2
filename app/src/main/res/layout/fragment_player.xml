@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/playing_artist"
+        tools:text="ARTIST_NAME"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/playing_album"
+        android:gravity="center"
+        android:textStyle="italic"
+        tools:text="ALBUM_NAME"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:id="@+id/playing_image"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/playing_track"
+        android:gravity="center"
+        android:textStyle="bold"
+        tools:text="TRACK_NAME"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/playing_progressbar"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/player_progress"
+            android:layout_below="@id/playing_progressbar"
+            android:layout_alignParentLeft="true"
+            tools:text="0:00"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/player_duration"
+            android:layout_below="@id/playing_progressbar"
+            android:layout_alignParentRight="true"
+            tools:text="1:00"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:id="@+id/prev_track"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/ic_media_previous"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/play_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/ic_media_play"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/next_track"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/ic_media_next"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</LinearLayout>

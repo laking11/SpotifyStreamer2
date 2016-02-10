@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:background="@color/notification_background2"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/note_image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        tools:src="@drawable/no_image" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="64dp"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/note_song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="marquee"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            tools:text="Song name very long test"/>
+        <TextView
+            android:id="@+id/note_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:ellipsize="marquee"
+            tools:text="Artist name very long test"/>
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/note_prev"
+        android:src="@android:drawable/ic_media_previous"
+
+        android:background="@android:color/transparent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent" />
+    <ImageButton
+        android:id="@+id/note_play"
+        android:src="@android:drawable/ic_media_play"
+        android:background="@android:color/transparent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent" />
+    <ImageButton
+        android:id="@+id/note_pause"
+        android:src="@android:drawable/ic_media_pause"
+        android:background="@android:color/transparent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent" />
+    <ImageButton
+        android:id="@+id/note_next"
+        android:src="@android:drawable/ic_media_next"
+        android:background="@android:color/transparent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

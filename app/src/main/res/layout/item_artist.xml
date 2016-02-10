@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:background="@drawable/touch_selector">
+
+    <ImageView
+        android:id="@+id/image_artist"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/item_layout_margin"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        tools:src="@drawable/no_image" />
+
+    <TextView
+        android:id="@+id/text_artist_name"
+        android:layout_width="0dp"
+        android:layout_margin="@dimen/item_layout_margin"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:padding="@dimen/abc_list_item_padding_horizontal_material"
+        tools:text="THE ARTIST" />
+</LinearLayout>
